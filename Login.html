@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gridStyle.css">
     <title>Login page</title>
 </head>
+
 <body>
-<form action="action_page.php" method="post">
-    <div class="imgcontainer">
-        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    <div>
+        <header>
+            <h3 id="logo"><img class="resize" src="/Image/skull.png" />My Assignment</h3>
+            <nav id="navbar">
+                <ul>
+                    <a href="https://www.google.com/">Google</a>
+                    <a href="https://www.w3.org/">W3C</a>
+                    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+                </ul>
+            </nav>
+            <input type="button" value="Go back!" onclick="history.back()">
+        </header>
+ 
+        <section id="container" class="wrapContainer">
+            <div class="containerLogin">
+                <h1 class="mainLogin">User Login</h1>
+                <form class="form">
+
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </form>
+            </div>
+        </section>
+
+    <footer>
+        <p id="footer">&copy; 2022 Zita.com</p>
+    </footer>
     </div>
-
-    <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit">Login</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-</form>
 </body>
+
 </html>

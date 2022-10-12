@@ -1,0 +1,189 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 1024;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-areas: "header header header header header"
+                         "main main main main aside"
+                         "footer footer footer footer footer";
+    background-color: aquamarine;
+}
+
+header {
+    display: grid;
+    grid-area: header;
+    grid-template-areas: "logo navbar navbar navbar login";
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 14px;
+}
+
+.resize {
+    width: 60px;
+    height: auto;
+}
+
+#logo {
+    grid-area: logo;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: cursive;
+}
+
+#navbar {
+    grid-area: navbar;
+    margin: 0 8px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#login {
+    grid-area: login;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 16px;
+}
+
+#navbar ul a{
+    margin: 0 3px;
+    padding: 0 3px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-template-areas: "mainHead artZone section article";
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#mainHead {
+    grid-area: mainHead;
+    background-color: rgb(255, 0, 242);
+    color: rgb(0, 0, 1);
+}
+
+#artZone {
+    grid-area: artZone;
+    background-color: rgb(0, 0, 242);
+    color: green;
+}
+
+#section{
+    background-color: blueviolet;
+}
+
+#article{
+    background-color: aqua;
+}
+
+#aside {
+    grid-area: aside;
+    background-color: chartreuse;
+    color: magenta;
+}
+/* 
+#ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+}
+
+#li {
+    float: left;
+    background-color: yellowgreen;
+} */
+
+footer {
+    grid-area: footer;
+    background-color: cyan;
+}
+
+/* a{
+    background-color: yellow;
+}
+
+
+
+li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+} */
+
+/***************Login**********/
+
+div{
+    grid-area: wrapContainer;
+    background-color: antiquewhite;
+}
+
+#div{
+    grid-area: container;
+    background-color: aqua;
+}
+
+.wrapContainer{
+    display: grid;
+    grid-template-areas: 'wrapContainer wrapContainer wrapContainer';
+    background-color: aquamarine;
+}
+
+.containerLogin{
+    display: grid;
+    grid-template-areas: 'mainLogin mainLogin mainLogin'
+                         'form form form';
+    background-color: blue;
+    -ms-grid-row-align: 10px;
+    padding: 10px;
+}
+.mainLogin{
+    grid-area: mainLogin;
+    height: 150px;
+    margin-left: 100px;
+    margin-top: 100px;
+    text-align: start;
+    background-color: cadetblue;
+}
+.form{
+    grid-area: form;
+    margin-left: 20%;
+    margin-top: 100px;
+    background-color: cornflowerblue;
+}
+input{
+    padding-top: 10px;
+    background-color: blue;
+}
+input[type=text]{
+    background-color: blueviolet;
+}
+input[type=password]{
+    background-color: chartreuse;
+}
+input[type=button]{
+    background-color: yellow;
+}
+input[type=submit]{
+    background-color: violet;
+}
+.cancelbtn{
+    background-color: yellowgreen;
+}
+.containerSend{
+    background-color: cyan;
+}

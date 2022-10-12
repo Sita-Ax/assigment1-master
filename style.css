@@ -1,0 +1,109 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;   
+}
+
+body{
+    background-image: linear-gradient(120deg, #ce9aff 0%, #65b5f6 100%);    
+    width: 1024;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header{
+    display: flex; 
+    flex-direction: row;
+    text-align: center;
+    margin-top: auto;
+    padding: 6px;
+    height: 100%;
+    background: rgb(113, 113, 206);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    margin: 1 -30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul a{
+    padding: 4px;
+    display: inline-flex;
+    margin: 0 30px;
+}
+
+#logo {
+    flex: 0 0 0;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+
+nav #login{
+    margin-left: auto;
+    padding: 15px;
+    background: purple;
+    color: aqua;
+    border: 1px solid black;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 6px;
+    background: chartreuse;
+    width: 75%;
+    border: 5px solid black;
+}
+
+h2{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    color: aquamarine;
+    background-color: azure;
+    border: 5px solid black;
+}
+
+p{
+    background-color: red;
+    border: 5px solid black;
+}
+
+#artZone{
+    flex-direction: row;
+    background-color: blueviolet;
+    border: 5px solid black;
+
+}
+
+aside{
+    display: flex;
+    float: right;
+    background: aliceblue;
+    width: 25%;
+    flex-direction: column;
+    border: 5px solid black;
+}
+
+img{
+    width: 50%;
+    height: 50px;
+}
+#span {
+    color: black;
+    background: red;
+    border: 5px solid black;
+}
+#section{
+    background: blue;
+    border: 5px solid black;
+}
+#footer{
+    display: grid;
+    grid-area: auto;
+    background-color: darkgrey;
+} 
