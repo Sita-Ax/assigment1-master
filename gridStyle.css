@@ -9,8 +9,9 @@ body {
     display: grid;
     grid-template-areas: "header header header header header"
                          "main main main main aside"
+                         "main main main main aside"
                          "footer footer footer footer footer";
-    background-color: aquamarine;
+    background-image: linear-gradient(120deg, #ffeb9a 50%, #f6f665 20%);
 }
 
 header {
@@ -63,53 +64,47 @@ header {
 main {
     display: grid;
     grid-area: main;
-    grid-template-areas: "mainHead artZone section article";
-    background-color: antiquewhite;
-    border: 2px solid black;
+    grid-template-areas: "mainHead mainHead mainHead" "artZone section article";
+    border: 1px solid black;
     border-radius: 5px;
 }
 
 #mainHead {
     grid-area: mainHead;
-    background-color: rgb(255, 0, 242);
+    display: grid;
+    grid-template-areas: "artZone artZone artZone";
     color: rgb(0, 0, 1);
 }
 
 #artZone {
+  display: grid;
     grid-area: artZone;
-    background-color: rgb(0, 0, 242);
+    grid-template-areas: "section article article";
+    margin: 0 0 0;
+    border: 1px solid black;
     color: green;
 }
 
 #section{
-    background-color: blueviolet;
+  margin: 0 10px;
+    background-color: #f6f665;
 }
 
 #article{
-    background-color: aqua;
+  margin: 0 15px;
+  align-items: center;
+  background-color: #ffeb9a;
 }
 
 #aside {
     grid-area: aside;
-    background-color: chartreuse;
     color: magenta;
 }
-/* 
-#ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: blue;
-}
-
-#li {
-    float: left;
-    background-color: yellowgreen;
-} */
 
 footer {
+  display: grid;
     grid-area: footer;
-    background-color: cyan;
+    background-image: linear-gradient(120deg, white, #6f6f6d 50%, #454540 20%);
 }
 
 /* a{
@@ -125,64 +120,77 @@ li a{
 
 } */
 
-/***************Login**********/
+/***************Login*************/
 
-div{
+.container{
     grid-area: wrapContainer;
-    background-color: antiquewhite;
 }
 
 #div{
-    grid-area: container;
-    background-color: aqua;
+    grid-area: loginContainer; 
 }
 
 .wrapContainer{
     display: grid;
     grid-template-areas: 'wrapContainer wrapContainer wrapContainer';
-    background-color: aquamarine;
+    background-image: url('/Image/skull.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size:cover;
 }
 
 .containerLogin{
     display: grid;
+    margin: 30%;
     grid-template-areas: 'mainLogin mainLogin mainLogin'
                          'form form form';
-    background-color: blue;
-    -ms-grid-row-align: 10px;
-    padding: 10px;
 }
+
 .mainLogin{
     grid-area: mainLogin;
-    height: 150px;
-    margin-left: 100px;
-    margin-top: 100px;
-    text-align: start;
-    background-color: cadetblue;
+    text-align: center;
 }
 .form{
     grid-area: form;
-    margin-left: 20%;
-    margin-top: 100px;
-    background-color: cornflowerblue;
+    margin: 20px 15px 25px;
+    height: 190px;
+    width: 250px;
+    text-align: center;
+    color:rgb(110, 92, 52);
+    background-color: black;
+    border-radius: 60px;
 }
-input{
-    padding-top: 10px;
-    background-color: blue;
-}
+
 input[type=text]{
-    background-color: blueviolet;
+  margin: 20px;
+  height: 25px;
+  width: auto;
+  border-radius: 10px;
 }
 input[type=password]{
-    background-color: chartreuse;
+  margin: 5px;
+  height: 25px;
+  width: auto;
+  border-radius: 10px;
+}
+button[type=submit] {
+  margin: 5px;
+  height: 25px;
+  width: auto;
+  border-radius: 10px;
+  color: brown;
+}
+input[type=checkbox] {
+  margin: 1px;
 }
 input[type=button]{
-    background-color: yellow;
-}
-input[type=submit]{
-    background-color: violet;
+  background-image: url('/Image/david.jpg');
+  background-size: 90px;
+  color: rgb(255, 166, 0);
+  border-radius: 15px;
 }
 .cancelbtn{
-    background-color: yellowgreen;
+    background-color: rgb(220, 66, 0);
 }
 .containerSend{
     background-color: cyan;

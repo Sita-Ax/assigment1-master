@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div>
+    <div id="container">
         <header>
             <h3 id="logo"><img class="resize" src="/Image/skull.png" />My Assignment</h3>
             <nav id="navbar">
@@ -23,32 +23,25 @@
             <input type="button" value="Go back!" onclick="history.back()">
         </header>
  
-        <section id="container" class="wrapContainer">
+        <section id="loginContainer" class="wrapContainer">
             <div class="containerLogin">
                 <h1 class="mainLogin">User Login</h1>
                 <form class="form">
-
-                    <label for="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username" name="uname" required>
-
-                    <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
-
                     <button type="submit">Login</button>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                </div>
-
-                <button type="button" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-            </form>
+                    <br><br>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <br><br>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </form>
             </div>
         </section>
 
-    <footer>
-        <p id="footer">&copy; 2022 Zita.com</p>
-    </footer>
+        <footer>
+            <p id="footer">&copy; 2022 Zita.com</p>
+        </footer>
     </div>
 </body>
 
